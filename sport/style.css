@@ -1,0 +1,385 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+
+body {
+    font-family: 'Inter', system-ui, sans-serif;
+    background: #0f0f12;
+    color: #fff;
+    line-height: 1.6
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px
+}
+
+a {
+    color: inherit;
+    text-decoration: none
+}
+
+.header {
+    position: sticky;
+    top: 0;
+    background: rgba(15, 15, 18, .92);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid #26262e;
+    z-index: 50
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 68px
+}
+
+.logo {
+    font-weight: 900;
+    font-size: 22px;
+    letter-spacing: .5px
+}
+
+.logo span {
+    color: #c8ff2e
+}
+
+.menu {
+    display: flex;
+    gap: 26px;
+    font-weight: 600;
+    font-size: 15px
+}
+
+.menu a:hover {
+    color: #c8ff2e
+}
+
+.btn-whatsapp {
+    background: #25D366;
+    color: #07130a !important;
+    font-weight: 800;
+    padding: 12px 20px;
+    border-radius: 999px;
+    display: inline-block;
+    text-align: center;
+    transition: .2s
+}
+
+.btn-whatsapp:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(37, 211, 102, .35)
+}
+
+.btn-whatsapp.small {
+    padding: 9px 16px;
+    font-size: 14px
+}
+
+.btn-whatsapp.full {
+    width: 100%
+}
+
+.btn-ghost {
+    border: 1px solid #3a3a44;
+    padding: 12px 20px;
+    border-radius: 999px;
+    font-weight: 700
+}
+
+.burger {
+    display: none;
+    background: none;
+    border: 0;
+    color: #fff;
+    font-size: 26px
+}
+
+.hero {
+    padding: 56px 0 40px;
+    background: radial-gradient(600px 300px at 80% 10%, rgba(200, 255, 46, .18), transparent), linear-gradient(180deg, #141419, #0f0f12)
+}
+
+.hero-grid {
+    display: grid;
+    grid-template-columns: 1.2fr .8fr;
+    gap: 32px;
+    align-items: center
+}
+
+.badge {
+    background: #1e1e26;
+    border: 1px solid #333;
+    padding: 7px 12px;
+    border-radius: 999px;
+    font-size: 13px;
+    display: inline-block
+}
+
+h1 {
+    font-size: 56px;
+    line-height: .95;
+    margin: 18px 0;
+    letter-spacing: -1px
+}
+
+h1 .accent {
+    color: #c8ff2e
+}
+
+.hero p {
+    color: #b9b9c2;
+    max-width: 520px
+}
+
+.hero-btns {
+    display: flex;
+    gap: 12px;
+    margin: 22px 0;
+    flex-wrap: wrap
+}
+
+.stats {
+    display: flex;
+    gap: 32px;
+    margin-top: 10px
+}
+
+.stats div {
+    display: flex;
+    flex-direction: column
+}
+
+.stats b {
+    font-size: 22px
+}
+
+.stats span {
+    color: #999;
+    font-size: 13px
+}
+
+.hero-card {
+    background: #1a1a21;
+    border: 1px solid #2a2a34;
+    border-radius: 20px;
+    overflow: hidden
+}
+
+.hero-img {
+    font-size: 90px;
+    text-align: center;
+    padding: 28px 10px 6px;
+    background: linear-gradient(135deg, #c8ff2e, #ff7a1a)
+}
+
+.hero-card-inner {
+    padding: 20px
+}
+
+.hero-card-inner small {
+    color: #999;
+    display: block;
+    text-align: center;
+    margin-top: 10px
+}
+
+.section {
+    padding: 56px 0
+}
+
+.section h2 {
+    font-size: 34px;
+    margin-bottom: 6px
+}
+
+.sub {
+    color: #a8a8b2;
+    margin-bottom: 22px
+}
+
+.filter {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-bottom: 20px
+}
+
+.filter button {
+    background: #1d1d24;
+    border: 1px solid #333;
+    color: #fff;
+    padding: 9px 16px;
+    border-radius: 999px;
+    cursor: pointer;
+    font-weight: 700
+}
+
+.filter button.active {
+    background: #c8ff2e;
+    color: #111
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px
+}
+
+.card {
+    background: #1a1a21;
+    border: 1px solid #2a2a34;
+    border-radius: 18px;
+    padding: 20px
+}
+
+.card .icon {
+    font-size: 32px
+}
+
+.card h3 {
+    margin: 10px 0 6px
+}
+
+.card p {
+    color: #a8a8b2;
+    font-size: 14px
+}
+
+.card b {
+    font-size: 13px;
+    color: #c8ff2e
+}
+
+.dark {
+    background: #141419
+}
+
+.price-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px
+}
+
+.price {
+    background: #1e1e26;
+    border: 1px solid #333;
+    border-radius: 20px;
+    padding: 24px;
+    position: relative
+}
+
+.price.popular {
+    border: 2px solid #c8ff2e;
+    transform: scale(1.02)
+}
+
+.price h3 {
+    font-size: 32px;
+    margin: 12px 0
+}
+
+.price small {
+    font-size: 16px
+}
+
+.price ul {
+    list-style: none;
+    margin: 14px 0 18px;
+    color: #c9c9d1
+}
+
+.price li {
+    padding: 5px 0
+}
+
+.pop {
+    position: absolute;
+    top: -13px;
+    left: 20px;
+    background: #c8ff2e;
+    color: #111;
+    font-weight: 800;
+    font-size: 12px;
+    padding: 5px 10px;
+    border-radius: 999px
+}
+
+.trainer {
+    text-align: center
+}
+
+.avatar {
+    font-size: 48px
+}
+
+.contact {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap
+}
+
+.btn-whatsapp.big {
+    font-size: 18px;
+    padding: 16px 26px
+}
+
+.footer {
+    text-align: center;
+    color: #777;
+    font-size: 13px;
+    padding: 20px 0 0
+}
+
+.float-wa {
+    position: fixed;
+    right: 18px;
+    bottom: 18px;
+    width: 60px;
+    height: 60px;
+    background: #25D366;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, .4);
+    z-index: 99
+}
+
+@media(max-width:820px) {
+    .menu {
+        display: none
+    }
+
+    .burger {
+        display: block
+    }
+
+    h1 {
+        font-size: 38px
+    }
+
+    .hero-grid,
+    .grid,
+    .price-grid {
+        grid-template-columns: 1fr
+    }
+
+    .menu.open {
+        display: flex;
+        position: absolute;
+        top: 68px;
+        left: 0;
+        right: 0;
+        flex-direction: column;
+        background: #15151a;
+        padding: 16px 20px
+    }
+}
